@@ -173,7 +173,7 @@ export default async function NotePage({ params }: Props) {
             </Button>
             <Button asChild size="sm" variant="outline">
               <a
-                href="https://github.com/decodewithdeepak/notesneo-content"
+                href="https://github.com/deepakmodidev/notesneo-content"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -17,13 +17,13 @@ export default function HomePage() {
     url: "https://notesneo.vercel.app",
     logo: "https://notesneo.vercel.app/favicon.png",
     sameAs: [
-      "https://github.com/decodewithdeepak",
+      "https://github.com/deepakmodidev",
       "https://twitter.com/deepakmodi_io",
     ],
     founder: {
       "@type": "Person",
       name: "Deepak Modi",
-      url: "https://deepakmodi.tech",
+      url: "https://deepakmodi.dev",
     },
   };
 
@@ -38,21 +38,21 @@ export default function HomePage() {
       <main className="max-w-full flex flex-col min-h-full pt-10">
         <div className="flex-1 border border-border">
           <HeroSection />
-        <div className="h-8 bg-dashed"></div>
-        <Features />
-        <div className="h-8 bg-dashed"></div>
-        <AndroidApp />
-        <div className="h-8 bg-dashed"></div>
-        <Pricing />
-        <div className="h-8 bg-dashed"></div>
-        <Testimonials />
-        <div className="h-8 bg-dashed"></div>
-        <Creator />
-        <div className="h-8 bg-dashed"></div>
-        <FAQs />
-        <div className="h-8 bg-dashed"></div>
-        <CTA />
-        <div className="h-8 bg-dashed"></div>
+          <div className="h-8 bg-dashed"></div>
+          <Features />
+          <div className="h-8 bg-dashed"></div>
+          <AndroidApp />
+          <div className="h-8 bg-dashed"></div>
+          <Pricing />
+          <div className="h-8 bg-dashed"></div>
+          <Testimonials />
+          <div className="h-8 bg-dashed"></div>
+          <Creator />
+          <div className="h-8 bg-dashed"></div>
+          <FAQs />
+          <div className="h-8 bg-dashed"></div>
+          <CTA />
+          <div className="h-8 bg-dashed"></div>
         </div>
       </main>
     </>

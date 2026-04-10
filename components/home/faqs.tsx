@@ -42,9 +42,8 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
                   stroke="currentColor"
                   strokeWidth="1.5"
                   strokeLinecap="round"
-                  className={`transition-all origin-center duration-200 ${
-                    isOpen ? "rotate-90" : "rotate-0"
-                  }`}
+                  className={`transition-all origin-center duration-200 ${isOpen ? "rotate-90" : "rotate-0"
+                    }`}
                 />
                 <path
                   d="M4 8h8"
@@ -202,7 +201,7 @@ export default function FAQs() {
               </a>{" "}
               or reach out{" "}
               <a
-                href="https://deepakmodi.tech/"
+                href="https://deepakmodi.dev/"
                 className="text-primary hover:underline"
               >
                 here

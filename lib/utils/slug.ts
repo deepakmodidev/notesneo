@@ -4,7 +4,7 @@
  * Example: "6th-sem/adbms/unit-1.md" <-> "6th-sem-adbms-unit-1"
  */
 
-const GITHUB_REPO = "decodewithdeepak/notesneo-content";
+const GITHUB_REPO = "deepakmodidev/notesneo-content";
 const GITHUB_BRANCH = "main";
 
 /**

@@ -132,7 +132,7 @@ export default function Navbar() {
 
             <Button size="sm" variant="ghost" asChild className="gap-1.5">
               <Link
-                href="https://github.com/decodewithdeepak/notesneo"
+                href="https://github.com/deepakmodidev/notesneo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -194,7 +194,7 @@ export default function Navbar() {
                   <div className="h-px bg-border my-3" />
 
                   <MobileNavItem
-                    href="https://github.com/decodewithdeepak/notesneo"
+                    href="https://github.com/deepakmodidev/notesneo"
                     label="Star on GitHub"
                     icon={GithubRoundedIcon}
                     onClick={() => setIsOpen(false)}

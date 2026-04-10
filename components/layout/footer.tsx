@@ -11,9 +11,8 @@ export default function Footer() {
 
   return (
     <footer
-      className={`border-x ${
-        showBorderTop ? "border-t" : ""
-      } border-border z-50 bg-background`}
+      className={`border-x ${showBorderTop ? "border-t" : ""
+        } border-border z-50 bg-background`}
     >
       <div className="max-w-6xl mx-auto px-2 py-6">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
@@ -44,7 +43,7 @@ export default function Footer() {
 						</a> */}
             Built by&nbsp;
             <a
-              href="https://deepakmodi.tech/"
+              href="https://deepakmodi.dev/"
               className="text-foreground hover:text-primary hover:transition-colors underline underline-offset-3"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +52,7 @@ export default function Footer() {
             </a>
             . The source code is available on&nbsp;
             <a
-              href="https://github.com/decodewithdeepak/notesneo"
+              href="https://github.com/deepakmodidev/notesneo"
               className="text-foreground hover:text-primary hover:transition-colors underline underline-offset-3"
               target="_blank"
               rel="noopener noreferrer"

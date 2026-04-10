@@ -49,7 +49,7 @@ A modern, responsive web application for browsing and downloading high-quality a
 
 ```bash
 # Clone the repository with submodules
-git clone --recurse-submodules https://github.com/decodewithdeepak/notesneo.git
+git clone --recurse-submodules https://github.com/deepakmodidev/notesneo.git
 cd notesneo
 
 # If you already cloned without --recurse-submodules, initialize submodules:
@@ -64,7 +64,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-> **Note:** This project uses a Git submodule for content management. The `notes-content/` folder links to a separate repository: [notesneo-content](https://github.com/decodewithdeepak/notesneo-content)
+> **Note:** This project uses a Git submodule for content management. The `notes-content/` folder links to a separate repository: [notesneo-content](https://github.com/deepakmodidev/notesneo-content)
 
 ### Build for Production
 
@@ -100,7 +100,7 @@ npm start
 
 ### Content Repository
 
-Educational content is managed in a separate repository: [notesneo-content](https://github.com/decodewithdeepak/notesneo-content)
+Educational content is managed in a separate repository: [notesneo-content](https://github.com/deepakmodidev/notesneo-content)
 
 This separation provides:
 - ✅ Independent version control for content
@@ -155,7 +155,7 @@ We welcome contributions! To contribute:
 
 ### Content Contributions
 
-1. Fork the [notesneo-content](https://github.com/decodewithdeepak/notesneo-content) repository
+1. Fork the [notesneo-content](https://github.com/deepakmodidev/notesneo-content) repository
 2. Add or update notes following the existing format
 3. Submit a Pull Request with your changes
 4. Content will be reviewed and merged

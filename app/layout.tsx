@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     "free notes",
     "engineering notes",
   ],
-  authors: [{ name: "Deepak Modi", url: "https://deepakmodi.tech" }],
+  authors: [{ name: "Deepak Modi", url: "https://deepakmodi.dev" }],
   creator: "Deepak Modi",
   publisher: "NotesNeo",
   metadataBase: new URL("https://notesneo.vercel.app"),

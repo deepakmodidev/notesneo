@@ -18,8 +18,8 @@ export default function Creator() {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/decodewithdeepak",
-      label: "@decodewithdeepak",
+      url: "https://github.com/deepakmodidev",
+      label: "@deepakmodidev",
     },
     {
       name: "LinkedIn",
