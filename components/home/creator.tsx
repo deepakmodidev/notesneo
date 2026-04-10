@@ -24,14 +24,14 @@ export default function Creator() {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://www.linkedin.com/in/deepakmodi1/",
-      label: "deepakmodi1",
+      url: "https://www.linkedin.com/in/deepakmodidev/",
+      label: "deepakmodidev",
     },
     {
       name: "X",
       icon: XIcon,
-      url: "https://twitter.com/deepakmodi_io",
-      label: "@deepakmodi_io",
+      url: "https://twitter.com/deepakmodidev",
+      label: "@deepakmodidev",
     },
   ];
 

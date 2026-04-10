@@ -194,7 +194,7 @@ export default function FAQs() {
             <p className="text-base sm:text-lg text-muted-foreground">
               Have another question? Contact us on{" "}
               <a
-                href="https://x.com/deepakmodi_io"
+                href="https://x.com/deepakmodidev"
                 className="text-primary hover:underline"
               >
                 Twitter

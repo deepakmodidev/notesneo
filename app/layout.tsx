@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     title: "NotesNeo - Best Academic Notes for MDU Rohtak",
     description:
       "Access high-quality academic notes for MDU Rohtak. Download, save, and access personalized study resources on NotesNeo for efficient learning.",
-    creator: "@deepakmodi_io",
+    creator: "@deepakmodidev",
   },
   verification: {
     google: "vvp2OYjF6CFibJc7x2WTbT-4fWFHe6Ue5hYXcaq_LjE",

@@ -18,7 +18,7 @@ export default function HomePage() {
     logo: "https://notesneo.vercel.app/favicon.png",
     sameAs: [
       "https://github.com/deepakmodidev",
-      "https://twitter.com/deepakmodi_io",
+      "https://twitter.com/deepakmodidev",
     ],
     founder: {
       "@type": "Person",
