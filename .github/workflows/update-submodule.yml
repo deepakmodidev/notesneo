@@ -3,7 +3,7 @@ name: Update Submodule
 on:
   repository_dispatch:
     types: [update-content]
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   update:
@@ -13,6 +13,7 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Update submodule
         run: |
