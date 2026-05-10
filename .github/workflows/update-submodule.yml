@@ -1,0 +1,31 @@
+name: Update Submodule
+
+on:
+  repository_dispatch:
+    types: [update-content]
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Update submodule
+        run: |
+          git submodule update --remote --merge notes-content
+          
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add notes-content
+            git commit -m "chore: update notes-content to latest"
+            git push
+          else
+            echo "No changes to commit"
+          fi
