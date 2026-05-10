@@ -63,7 +63,7 @@ function parseNote(
 
 export async function getAllNotes(): Promise<MarkdownNote[]> {
   const allNotes: MarkdownNote[] = [];
-  const contentDir = path.join(process.cwd(), "notes-content");
+  const contentDir = path.join(process.cwd(), "notesneo-content");
 
   if (!fs.existsSync(contentDir)) {
     console.error(
