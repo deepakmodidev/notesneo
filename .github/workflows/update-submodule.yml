@@ -17,15 +17,15 @@ jobs:
 
       - name: Update submodule
         run: |
-          git submodule update --remote --merge notes-content
+          git submodule update --remote --merge notesneo-content
           
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           if [[ -n "$(git status --porcelain)" ]]; then
-            git add notes-content
-            git commit -m "chore: update notes-content to latest"
+            git add notesneo-content
+            git commit -m "chore: update notesneo-content to latest"
             git push
           else
             echo "No changes to commit"

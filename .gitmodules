@@ -1,4 +1,4 @@
-[submodule "notes-content"]
-	path = notes-content
+[submodule "notesneo-content"]
+	path = notesneo-content
 	url = https://github.com/deepakmodidev/notesneo-content.git
 	branch = main
