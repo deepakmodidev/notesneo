@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, ReactNode } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import { Logo } from "@/components/icons/logo";
 import { Button } from "@/components/ui/button";
 import {
@@ -94,6 +94,14 @@ function MobileNavItem({
 export default function Navbar() {
   const { favorites, isLoaded } = useFavorites();
   const [isOpen, setIsOpen] = useState(false);
+  const [githubStars, setGithubStars] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch("https://api.github.com/repos/deepakmodidev/notesneo")
+      .then((r) => r.json())
+      .then((d) => setGithubStars(d.stargazers_count ?? null))
+      .catch(() => {});
+  }, []);
 
   const favoritesCount =
     isLoaded && favorites.length > 0 ? favorites.length : null;
@@ -119,7 +127,7 @@ export default function Navbar() {
               <span className="flex items-center gap-1.5">
                 Favorites
                 {favoritesCount && (
-                  <span className="h-5 min-w-5 px-1.5 rounded-full bg-primary text-primary-foreground text-xs font-semibold flex items-center justify-center">
+                  <span className="h-5 min-w-5 px-1.5 rounded-full bg-secondary text-secondary-foreground text-xs font-semibold flex items-center justify-center">
                     {favoritesCount}
                   </span>
                 )}
@@ -135,9 +143,15 @@ export default function Navbar() {
                 href="https://github.com/deepakmodidev/notesneo"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-1.5"
               >
                 <GithubRoundedIcon className="h-5 w-5" />
                 <span>Star</span>
+                {githubStars !== null && (
+                  <span className="h-5 w-5 rounded-full bg-secondary text-secondary-foreground text-xs font-bold flex items-center justify-center leading-none">
+                    {githubStars}
+                  </span>
+                )}
               </Link>
             </Button>
 
@@ -183,7 +197,7 @@ export default function Navbar() {
                       onClick={() => setIsOpen(false)}
                       rightSlot={
                         label === "Favorites" && favoritesCount ? (
-                          <span className="h-6 min-w-6 px-2 rounded-full bg-primary text-primary-foreground text-xs font-semibold flex items-center justify-center">
+                          <span className="h-6 min-w-6 px-2 rounded-full bg-secondary text-secondary-foreground text-xs font-semibold flex items-center justify-center">
                             {favoritesCount}
                           </span>
                         ) : null
@@ -198,6 +212,13 @@ export default function Navbar() {
                     label="Star on GitHub"
                     icon={GithubRoundedIcon}
                     onClick={() => setIsOpen(false)}
+                    rightSlot={
+                      githubStars !== null ? (
+                        <span className="h-6 w-6 rounded-full bg-secondary text-secondary-foreground text-xs font-bold flex items-center justify-center leading-none">
+                          {githubStars}
+                        </span>
+                      ) : null
+                    }
                   />
                 </nav>
               </SheetContent>
